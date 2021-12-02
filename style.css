@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222;
+  color: #eee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body {
+  margin: 0 auto;
+  max-width: 1270px;
+}
+
+.cta-button {
+  border: none;
+  border-radius: 8px;
+  background-color: #678fff;
+  color: #eee;
+  font-weight: 600;
+  height: 40px;
+  margin: 24px;
+  padding: 0 8px;
+  width: 200px;
+}
+
+.cta-wrap {
+  margin: 24px auto;
+  max-width: 550px;
+  text-align: center;
+}
+
+.header {
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  height: 36px; /* Update when it will actually wrap around child elements */
+  justify-content: flex-end;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  position: static;
+  width: 100%;
+  z-index: 199;
+}
+
+.header-wrap {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 24px;
+  padding-bottom: 0;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+}
+
+.logo-homepage {
+  height: 140px;
+  width: 120px;
+}
+
+.logo-text {
+  display: block;
+  font-size: 20px;
+
+  text-align: center;
+}
+
+.logo-wrap {
+  margin: 24px auto;
+}
+
+.main-text {
+  font-size: 28px; /* Previously 36px */
+  font-weight: 700;
+  margin: 16px 0;
+}
+
+.nav-button {
+  background-color: lightgray;
+  height: 28px;
+  line-height: 28px;
+  margin-right: 4px;
+  padding: 4px;
+  text-align: center;
+  width: 45px;
+  z-index: 200;
+}
+
+.search-bar {
+  align-items: center;
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 665px;
+  width: 80%;
+}
+
+.search-input {
+  background-color: lightgray;
+  border: none;
+  height: 35px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.sub-text {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 8px 0;
+}
+
+#search-button {
+  border-radius: 0 4px 1px 0;
+  margin-left: 2px;
+
+  text-align: center;
+  width: 35px;
+}
+
+#search-field {
+  border-radius: 1px 0 0 4px;
+  padding-left: 4px;
+  width: 80%;
+}
+
+@media screen and (max-width: 755px) {
+  .cta-wrap {
+    margin: 24px auto;
+    width: 400px;
+  }
+  .main-text {
+    max-width: 400px;
+  }
+
+  .sub-text {
+    max-width: 400px;
+  }
+}
