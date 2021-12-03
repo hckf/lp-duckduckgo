@@ -11,8 +11,8 @@
   <body>
     <div class="header-wrap">
       <div class="header">
-        <div class="nav-button" id="media-button">Media</div>
-        <div class="nav-button" id="menu-button">Menu</div>
+        <div class="nav-btn" id="media-btn">Media</div>
+        <div class="nav-btn" id="menu-btn">Menu</div>
       </div>
     </div>
     <div class="body" id="page-body">
@@ -32,31 +32,82 @@
           />
           <input
             class="search-input"
-            id="search-button"
+            id="search-btn"
             type="submit"
             value="Go!"
           />
         </form>
       </div>
       <div class="cta-wrap">
-        <h1 class="cta-text main-text">
+        <h1 class="cta-header">
           Tired of being tracked online?<br />
           <span>We can help.</span>
         </h1>
-        <h2 class="cta-text sub-text">
+        <h2 class="cta-subheader">
           We don't store your personal info. We don't follow you around with
           ads.
         </h2>
-        <h2 class="cta-text sub-text">We don't track you. Ever.</h2>
+        <p>We don't track you. Ever.</p>
         <input
-          class="cta-button"
+          class="cta-btn default-btn"
           type="button"
           value="Add DuckDuckGo to Safari"
         />
       </div>
       <div class="content-wrap">
         <h2 class="content-text sub-text">Privacy Protection For Any Device</h2>
-        <div class="content-tiles"><div class=""</div>
+        <div class="content-tiles">
+          <div class="content-tile" id="tile-extension">
+            <img
+              class="tile-image"
+              id="browser-extension-image"
+              src="images/privacy_browser_extension.svg"
+            />
+          </div>
+          <div class="content-tile" id="tile-browser">
+            <img
+              class="tile-image"
+              id="browser-extension-image"
+              src="images/private_search_engine.svg"
+            />
+          </div>
+          <div class="content-tile" id="tile-app">
+            <img
+              class="tile-image"
+              id="browser-extension-image"
+              src="images/privacy_browser_app.svg"
+            />
+          </div>
+        </div>
+        <div class="curve-wrap">
+          <div class="curve" id="info-curve"></div>
+          <div class="curve-body" id="info-block">
+            <div class="curve-text">
+              <div class="curve-header">
+                We don’t store your<br />personal information. Ever.
+              </div>
+              <div class="curve-subheader">
+                Our privacy policy is simple: we don’t collect<br />or share any
+                of your personal information.
+              </div>
+              <input
+                class="curve-btn default-btn"
+                type="button"
+                value="Add DuckDuckGo to Safari"
+              />
+            </div>
+            <img class="monster-image" src="images/ddg_monster.svg" />
+          </div>
+        </div>
+        <div class="faq-wrap">
+          <div class="faq-header">Frequently Asked Questions</div>
+
+          <input
+            class="faq-btn default-btn"
+            type="button"
+            value="Add DuckDuckGo to Safari"
+          />
+        </div>
       </div>
     </div>
   </body>
