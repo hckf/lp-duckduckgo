@@ -9,6 +9,11 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.active,
+.collapse:hover {
+  color: #eee;
+}
+
 .body {
   margin: 0 auto;
   max-width: 1270px;
@@ -22,15 +27,18 @@ body {
   background-color: #282828;
   box-sizing: border-box;
   border-radius: 24px;
-  margin: 8px;
+  margin: 8px 12px;
   min-height: 300px;
-  width: 290px;
+  padding: 24px;
+  width: 320px;
 }
 
 .content-tiles {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+  max-width: 1140px;
+  width: 100%;
   z-index: 2;
 }
 
@@ -124,8 +132,20 @@ body {
   width: 200px;
 }
 
+.divider {
+  border-top: 1px solid #222;
+}
+
 .faq-btn {
   background-color: #678fff;
+}
+
+.faq-answer {
+  padding: 0 18px;
+  display: inline;
+  font-size: 14px;
+  overflow: hidden;
+  width: 700px;
 }
 
 .faq-header {
@@ -134,11 +154,36 @@ body {
   margin-bottom: 16px;
 }
 
+.faq-question {
+  background-color: #222;
+  border: none;
+  color: #eee;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  outline: none;
+  padding: 18px;
+  text-align: left;
+  transition: height 0.3s ease-out;
+  width: 100%;
+}
+
+.faq-text {
+  line-height: 2.5;
+}
+
+.faq-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  transform: translate(0, -250px);
+}
+
 .header {
   background-color: gray;
   display: flex;
   align-items: center;
-  height: 36px; /* Update when it will actually wrap around child elements */
+  height: 36px;
   justify-content: flex-end;
   padding-bottom: 4px;
   padding-top: 4px;
@@ -187,7 +232,7 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   padding-top: 75px;
-  transform: translate(0, 3px);
+  transform: translate(0, 4px);
   width: 100%;
 }
 
@@ -227,8 +272,14 @@ body {
   margin: 8px 0;
 }
 
+.tile-header {
+  font-size: 20px;
+  font-weight: 800;
+}
+
 .tile-image {
-  margin-top: 24px;
+  height: 60px;
+  margin: 24px;
 }
 
 #search-btn {
@@ -271,6 +322,10 @@ body {
   }
 
   .curve-wrap {
+    transform: translate(0);
+  }
+
+  .faq-wrap {
     transform: translate(0);
   }
 
